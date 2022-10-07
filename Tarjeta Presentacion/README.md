@@ -1,1 +1,0 @@
-# firma-soc.github.io
