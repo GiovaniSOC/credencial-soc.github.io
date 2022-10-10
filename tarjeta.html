@@ -13,10 +13,12 @@
 <body>
     
     <main>
-        <div class="container">
-            <div class="logo">
-                <img src="hypothek.png" alt="">
+        <div class="container contain-logo">
+            <div class="logo" style="width: 500px;">
+                <img class="logo-hyp" src="hypothek.png" alt="">
             </div>
+        </div>
+        <div class="container">
             <div class="col-6" style="width:max-content">
                 <h1>Luis Alberto Angulo <a style="font-size:8px;" href="index.html">Ver credencial</a></h1>
                 <h2>Director General</h2>
@@ -33,17 +35,14 @@
             </div>
         </div>
         <footer>
-            <div class="col-3">@SOC_asesores</div>
-            <div class="col-3">@Socasesores</div>
-            <div class="col-3">@SOCasesores</div>
-            <div class="col-3">@Socasesores</div>
+            <div class="col-3"> <img class="rs" src="instagram.png">SOC_asesores</div>
+            <div class="col-3"><img class="rs" src="fb.png">Socasesores</div>
+            <div class="col-3"><img class="rs" src="gorjeo.png">SOCasesores</div>
+            <div class="col-3"><img class="rs" src="linkedin.png">Socasesores</div>
         </footer>
     </main>
-    
-
     <style>
         body{
-            height: 500px;
             width: 900px;
             background-color: white;
             font-family: 'Museo Sans';
@@ -52,15 +51,15 @@
             vertical-align: baseline;
         }
         .container{
-            margin: 0px 25px;
+            margin: 6px 25px;
         }
-        img{
-            width: 450px;
+        .contain-logo{
+            height: 900px;
+            align-items: center;
+            display: flex;
         }
-        .logo{
-            width: fit-content;
-            margin-bottom: 45px;
-            margin-top: 15px;
+        .logo-hyp{
+            width: 650px;
         }
         .col-6{
             display: inline-block;
@@ -93,6 +92,10 @@
             color: #345071;
             margin: 0px;
             font-family: 'Open Sans';
+        }
+        .rs{
+            width: 14px;
+            margin-right: 5px;
         }
         .qr{
             margin-left: 200px;
