@@ -14,12 +14,20 @@
     
     <main>
         <div class="container contain-logo">
-            <div class="logo">
-                <img class="logo-verde" src="logo-soc-recorte.png" alt="">
+            <div class="col-6">
+                <div class="logo">
+                    <img class="logo-verde" src="soc-logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <h1 class="nombre">STREET BROKER ASESORÍA FINANCIERA</h1>
             </div>
         </div>
+            <div class="sub-logo">
+                <img src="sub-logo.png">
+            </div>
         <div class="container">
-            <div class="row" style="margin-bottom: 30px;">
+            <div class="row" style="margin-bottom: 18px;">
                 <div class="col-6" style="width:max-content">
                     <h1 >Sócrates Martín<a style="font-size:8px;" href="firma.html">Ver credencial</a></h1>
                     <h2>Asesor</h2>
@@ -38,6 +46,14 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="col-3"> 
+                <a><img class="rs" src="instagram.png">SOC_asesores</a> 
+            </div>
+            <div class="col-3"><a><img class="rs" src="fb.png">Socasesores</a></div>
+            <div class="col-3"><a><img class="rs" src="gorjeo.png">SOCasesores</a></div>
+            <div class="col-3"><a><img class="rs" src="linkedin.png">Socasesores</a> </div>
+        </footer>
     </main>
     <style>
         :root{
@@ -53,24 +69,31 @@
         }
         .container{
             margin: 0px 25px;
-            height: 300px;
+            height: 253px;
         }
         .contain-logo{
-            height: 200px;
+            height: 140px;
             align-items: center;
             display: flex;
         }
         .logo-verde{
-            height: 135px;
-            margin-top: 5%;
+            width: 300px;
+            margin-top: 8%;
         }
         .logo{
             height: 200px;
         }
+        .sub-logo{
+            margin-left: 35px;
+        }
+        .nombre{
+            margin-top: 32px;
+            font-size: 26px;
+        }
         .col-6{
             display: inline-block;
             margin-right: 60px;
-            height: 150px;
+            height: 130px;
             /*grid-template-columns: 1fr;
             grid-gap: 1em;*/
         }
@@ -85,6 +108,7 @@
             margin-bottom: 2px;
             font-family: 'CircularXX-Bold';
             font-weight: 600;
+            margin-top: 18px;
         }
         h2{
             font-size: 35px;
@@ -104,24 +128,15 @@
             margin-top: 5px;
             margin-bottom: -10px;
         }
-        a{
-            font-size: 22px;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        .qr{
-            margin-left: 70px; 
-            width: 155px;
-            margin-bottom: 210px;
-        }
         footer{
             height: 60px;
-            background:  linear-gradient(270deg, #7DF150 0%, #81EFEB 50.91%, #2857CA 100%);
+            background: var(--verde);
             align-items: center;
             text-align: center;
             color: white;
             width: 900px;
             margin-bottom: 0px !important;
+            font-family: 'Museo Sans';
         }
         /*---Font--*/
         @font-face {
